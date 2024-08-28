@@ -1,0 +1,17 @@
+ame: my first workflow 
+on: push 
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout Repo 
+          uses: actions/checkout@v4
+        - name: welcome message 
+          run: |
+           sudo apt-get install cowsay -y 
+           cowsay -f dragon "Your message here" > output.txt
+           cat output.txt
+           echo " my first action job"
+           ls -lart
+           cat README.md
