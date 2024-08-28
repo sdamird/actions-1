@@ -1,4 +1,4 @@
-ame: my first workflow 
+name: my first workflow 
 on: push 
 
 jobs: 
