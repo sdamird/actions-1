@@ -10,7 +10,7 @@ jobs:
         - name: welcome message 
           run: |
            sudo apt-get install cowsay -y 
-           cowsay -f stegosaurus "Your message here" > output.txt
+           cowsay -f dog "Your message here" > output.txt
            cat output.txt
            echo " my first action job"
            ls -lart
