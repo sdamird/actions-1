@@ -8,9 +8,15 @@ jobs:
         - name: checkout Repo 
           uses: actions/checkout@v4
         - name: welcome message 
-          run: echo " my first action job"
-        - name: list files
-          run: ls
+          run: |
+           echo " my first action job"
+           ls -lart
+           cat README.md
+           cowsay -f dragon "Your message here" > output.txt
+
+
+        # - name: list files
+        #   run: ls
          
-        - name: Read file
-          run: cat README.md  
+        # - name: Read file
+        #   run: cat README.md  
