@@ -9,7 +9,18 @@ jobs:
           uses: actions/checkout@v4
         - name: welcome message 
           run: |
-           sudo apt-get install cowsay -y 
+           sudo wget -O /usr/share/cowsay/cows/dog.cow https://example.com/path/to/dog.cow
+           sudo nano /usr/share/cowsay/cows/dog.cow
+               $the_cow = <<EOC;
+               $thoughts
+               / \__
+              (    @\___
+              /         O
+             /   (_____/
+
+            
+
+           sudo apt-get reinstall cowsay -y 
            cowsay -f dog "Your message here" > output.txt
            cat output.txt
            echo " my first action job"
