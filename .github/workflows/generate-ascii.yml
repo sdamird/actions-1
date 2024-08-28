@@ -10,7 +10,7 @@ jobs:
         - name: welcome message 
           run: |
            
-           sudo apt-get reinstall cowsay -y 
+           sudo apt-get install cowsay -y 
            cowsay -f dragon "Your message here" > output.txt
            cat output.txt
            echo " my first action job"
