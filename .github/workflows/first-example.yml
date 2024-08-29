@@ -9,7 +9,7 @@ jobs:
           uses: actions/checkout@v4
         - name: welcome message 
           run: |
-           echo " my first action job"
+           echo " my first action job git sync"
            ls -lat
            cat README.md
            cowsay -f dragon "Your message here" > output.txt
