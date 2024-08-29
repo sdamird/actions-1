@@ -10,7 +10,7 @@ jobs:
         - name: welcome message 
           run: |
            echo " my first action job"
-           ls -lart
+           ls -lat
            cat README.md
            cowsay -f dragon "Your message here" > output.txt
 
